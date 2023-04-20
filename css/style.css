@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #1c1c1c;
+    font-family: Cascadia Code;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.nav-link {
+    color: white;
+    text-decoration:none;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.nav-menu-link:hover {
+    background-color: gray;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav{
+    background: #1c1c1c;
+    height: 80px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo{
+    height: 40px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+li a.active, li a:hover{
+    background: gray;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+section{
+    background: url(fondo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+}
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+
+span {
+    font-family: monospace;
+    padding-top: 30px;
+    padding-bottom: 200px;
+    padding-left: 50px;
+    color: white;
+    font-size: 130px;
+    display: inline-block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 13ch;
+    animation: typing 2s steps(12),
+    blink .8s infinite step-end alternate;
+    overflow: hidden;
+    -webkit-animation: typing 2s steps(12),;
+    justify-content: space-between;
+    display: flex;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+@keyframes typing {
+    from { width: 0 }
+}
+
+@keyframes blink {
+    50% { border-color: transparent}
+}
+
+
+.parrafos {
+    color: rgb(173, 173, 173);
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+.titulos {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section {
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+}
+#divicion {
+    padding: 70px;
+}
+
+.sing {
+    font-size: 15px;
+    display: inline-flex;
+    color: white;
+    max-width: 992px;
+    text-decoration: none;
+    padding: 2em 1em;
+    border: 1px solid white;
+    margin: 0em;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.sing:hover {
+    background-color: gray;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.parra {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.imagen-set {
+    position: absolute;
+    left: 46em;
+    top: 67em;
+}
+
+.imagen-set:hover {
+    width: 420px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.beneficios {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+.footer {
+    width: 100%;
+    background-color: #1d1d20;
+}
+
+.footer .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.footer .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .grupo-1 .box figure img{
+    width: 250px;
+}
+
+.footer .grupo-1 .box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.footer .grupo-1 .box p{
+    color: rgb(221, 221, 221);
+    margin-bottom: 10px;
+}
+
+.footer .grupo-1 .red-sosial a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color: #1c1c1c;
+    text-align: center;
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+}
+.footer .grupo-1 .red-sosial a:hover {
+    color: rgb(169, 169, 169);
+}
+
+.footer .grupo-2{
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+
+.footer .grupo-2 small{
+    font-size: 15px;
+}
+
+@media screen and (max-width:800px){
+    .footer .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+
+}
